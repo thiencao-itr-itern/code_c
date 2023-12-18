@@ -69,8 +69,6 @@ int32_t add_callback_func(uint32_t para, my_func_pointer_t handle_func, void* co
         printf("Invalid context pointer.\n");
         return -1;
     }
-
-    // Perform the callback
     handle_func(((TestAHandler*)context_ptr)->x, context_ptr);
 
     return 0;  // Success

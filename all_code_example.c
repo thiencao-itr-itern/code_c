@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define MY_DEFINE 2
+#define MY_DEFINE 1
 
 #ifdef MY_DEFINE 
     #if MY_DEFINE == 1
@@ -85,12 +85,12 @@ int main() {
         Button buttonA;
         SetButtonClickHandler(&buttonA, HandleButtonClickA);
         SimulateButtonClick(&buttonA);
-
+    // buttonB click
         Button buttonB;
         SetButtonClickHandler(&buttonB, HandleButtonClickB);
         SimulateButtonClick(&buttonB);
     #endif
-    // buttonB click
+    
     #if MY_DEFINE == 2
         // Create an event
         
