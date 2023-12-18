@@ -76,6 +76,8 @@ void SimulateDoubleClick(Event* event) {
         event->doubleClickHandler();
     }
 }
+    #elif MY_DEFINE == 3
+
     #endif
 #endif
 
@@ -90,7 +92,7 @@ int main() {
         SetButtonClickHandler(&buttonB, HandleButtonClickB);
         SimulateButtonClick(&buttonB);
     #endif
-    
+
     #if MY_DEFINE == 2
         // Create an event
         
@@ -107,6 +109,7 @@ int main() {
 
     // Simulate a double click (new functionality)
         SimulateDoubleClick(&myEvent);
+    #if MY_DEFINE == 3
     #endif
     return 0;
 }
