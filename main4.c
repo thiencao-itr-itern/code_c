@@ -66,7 +66,7 @@ void my_handle_func(int32_t x, void* context_ptr) {
 int32_t add_callback_func(uint32_t para, my_func_pointer_t handle_func, void* context_ptr) {
     // Check the validity of the context pointer
     if (context_ptr == NULL) {
-        printf("Error: Invalid context pointer.\n");
+        printf("Invalid context pointer.\n");
         return -1;
     }
 
