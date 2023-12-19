@@ -109,6 +109,7 @@ int main() {
 
     // Simulate a double click (new functionality)
         SimulateDoubleClick(&myEvent);
+    #endif
     #if MY_DEFINE == 3
     #endif
     return 0;
